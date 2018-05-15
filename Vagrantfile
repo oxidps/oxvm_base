@@ -10,7 +10,7 @@ require "#{base_vm_path}/ansible/ruby/get_ansible_version.rb"
 
 Vagrant.require_version ">= 1.7"
 
-required_plugins = ['vagrant-hostmanager', 'vagrant-triggers']
+required_plugins = ['vagrant-hostmanager']
 
 required_plugins.each do |plugin|
   if !Vagrant.has_plugin?(plugin)
